@@ -12,7 +12,7 @@ likes_comedies = input()
 
 if likes_docs == 'yes' or likes_docs == 'y':
     print("You should watch {}.".format(documentary))
-elif likes_comedies == 'yes' or likes_comedies == 'y' and likes_dramas == 'yes' or likes_dramas == 'y':
+elif (likes_comedies == 'yes' or likes_comedies == 'y') and (likes_dramas == 'yes' or likes_dramas == 'y'):
     print("You should watch {}.".format(dramedy))
 elif likes_dramas == 'yes' or likes_dramas == 'y':
     print("You should watch {}.".format(drama))
