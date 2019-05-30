@@ -6,24 +6,16 @@ seating_chart = [
 ]
 
 # Display the list of available seats to your user
-i = 0
-for row in seating_chart:
-    i += 1
-    n = 0
-    for seat in row:
-        n += 1
+for i, row in enumerate(seating_chart, start=1):
+    for n, seat in enumerate(row, start=1):
         if seat == None:
             print(f'Row {i} seat {n} is free.')
 
 # For each available seat, use input() to prompt your user to choose whether they want to claim that spot. 
 # If they indicate they want to claim a seat, prompt them for their name and insert it into the array to show that they've been seated, like so:
 def seat_picker():
-    i = 0
-    for row in seating_chart:
-        i += 1
-        n = 0
-        for seat in row:
-            n += 1
+    for i, row in enumerate(seating_chart, start=1):
+        for n, seat in enumerate(row, start=1):
             if seat == None:
                 print(f'Row {i} seat {n} is free. Do you want to sit there? (y/n)')
                 decision = input()
