@@ -27,3 +27,13 @@ for i, step in enumerate(project["steps"]):
     else:
         step["member"] = project["committee"][2]
 print(project["steps"])
+print("-----")
+
+# or
+
+counter = 0
+while counter < len(project['steps']):
+    for member in project["committee"]:
+        project['steps'][counter]["member"] = member
+        counter += 1
+print(project["steps"])
