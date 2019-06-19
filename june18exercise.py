@@ -34,3 +34,6 @@ longestConsecutive([], 2);
 longestConsecutive(['hi'], 2); 
 
 longestConsecutive(["zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"], -2); 
+
+# link to helpful stack overflow on understanding sorted with lambda
+# https://stackoverflow.com/questions/8966538/syntax-behind-sortedkey-lambda
