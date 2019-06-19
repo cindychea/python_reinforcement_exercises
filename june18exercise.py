@@ -9,18 +9,18 @@ def longestConsecutive(array, integer):
     if array == [] or integer > len(array) or integer < 0:
         print('""')
     else:
-        letters = []
+        words_and_lengths = []
         # if you do not want duplicates concatenated (only unique words)
         for word in set(array):
         # if you are okay with duplicates being concatenated
         # for word in array:
-            letters.append({'word': word, 'length': len(word)})
-        ordered = sorted(letters, key=lambda k: k['length'], reverse=True)
-        longest = ordered[0:integer]
-        consecutive = []
-        for item in longest:
-            consecutive.append(item['word'])
-        print(''.join(consecutive))
+            words_and_lengths.append({'word': word, 'length': len(word)})
+        ordered_words_and_lengths = sorted(words_and_lengths, key=lambda k: k['length'], reverse=True)
+        longest_words = ordered_words_and_lengths[0:integer]
+        top_words = []
+        for item in longest_words:
+            top_words.append(item['word'])
+        print(''.join(top_words))
 
 
 longestConsecutive(['hi', 'marbles', 'mittens', 'bye', 'lorem', 'ipsum', 'to', 'a', 'hippocampus'], 3)
