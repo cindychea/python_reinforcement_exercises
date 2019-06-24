@@ -7,6 +7,7 @@
 # 56328116
 # Your task is to write a method luckCheck(str), which returns true if argument is string decimal representation of a lucky ticket number, or false for all other numbers. 
 # It should handle errors for empty strings or strings which don't represent a decimal number
+
 import math
 
 

@@ -8,6 +8,7 @@
 // Your task is to write a method luckCheck(str), which returns true if argument is string decimal representation of a lucky ticket number, or false for all other numbers. 
 // It should handle errors for empty strings or strings which don't represent a decimal number
 
+
 function luckCheck(str) {
     if (str === '' || str < 0) {
         console.log('Error, please insert a valid string.')
@@ -25,10 +26,12 @@ function luckCheck(str) {
     }
 }
 
+
 function sumOfString(str) {
     let i = function(x) {return parseInt(x, 10)}
     return str.split('').map(i).reduce((a, b) => a + b)
 }
+
 
 luckCheck('003111')
 luckCheck('813372')
